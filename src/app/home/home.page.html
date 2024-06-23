@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>    
+    <ion-title>
+      News Feed 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">News Feed Beta</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+
+    <ion-card *ngFor="let item of articles">
+      <ion-router-link [routerLink]="item.url" target="_blank">
+        
+      </ion-router-link>
+      <ion-card-header>
+        <ion-card-title>
+          <ion-router-link [routerLink]="item.url" target="_blank">
+            {{item.title}}
+          </ion-router-link>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>{{item.description}}</p>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-list>
+
+</ion-content>

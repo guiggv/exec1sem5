@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>    
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+<ion-content [fullscreen]="true">
+<ion-card>
+<ion-grid>
+
+  <ion-row>
+    <ion-col>
+  <ion-input label="Email" [(ngModel)]="fireEmail" type="email" placeholder="email@domain.com"></ion-input>
+    </ion-col>
+  </ion-row>
+  
+  <ion-row>
+    <ion-col>
+  <ion-input label="Password" [(ngModel)]="fireSenha" type="password" value=""></ion-input>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col>
+  <ion-button (click)="loginUsuario()"shape="round">Login</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+     <ion-col>
+      <div class="cadastro">
+        <a [routerLink]="['/cadastro']">Cadastre-se</a></div> 
+    </ion-col>
+    <ion-col>
+  <div class="esqueceu" id="abrir-esqueseu">Esqueceu sua senha?</div> 
+  <ion-alert
+    trigger="open-forgetpass"
+    header="Escreva seu E-mail"
+    [buttons]="alertaBotao"
+    [inputs]="alertaInput">
+  </ion-alert>
+  </ion-col>
+</ion-row>
+</ion-grid>
+
+</ion-card>
+</ion-content>
+  

@@ -1,0 +1,48 @@
+
+
+
+ion-content {
+  --background: #2c2c2c; 
+  color: #ffffff; 
+}
+
+
+ion-toolbar {
+  --background: #1e1e1e; 
+  --color: #ffffff; 
+}
+
+
+ion-title {
+  --color: #1e90ff; 
+}
+
+
+ion-card {
+  --background: #3c3c3c; 
+  color: #ffffff; 
+}
+
+
+ion-card-title {
+  --color: #1e90ff; 
+}
+
+
+ion-card-content {
+  color: #dcdcdc; 
+}
+
+
+ion-router-link {
+  color: #1e90ff; 
+  text-decoration: none; 
+}
+
+ion-router-link:hover {
+  text-decoration: underline; 
+}
+
+.background-color{
+  color: #1e1e1e;
+}
